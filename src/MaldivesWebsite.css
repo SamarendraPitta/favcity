@@ -1,0 +1,281 @@
+/* Main content container */
+.content-container {
+    background-color: rgb(236, 237, 238);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25);
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    max-width: 90%;
+    position: relative;
+}
+
+.nav-bottom{
+    background-color: rgb(231, 159, 5);
+    height: 5px;
+}
+
+/* Desktop Navigation Bar */
+.desktop-nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px 0;
+    background-color: #333;
+}
+
+.desktop-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.desktop-nav a:hover {
+    color: #ffa500;
+}
+
+/* Menu Toggle Button (Mobile Only) */
+.menu-button {
+    background: none;
+    border: none;
+    color: black; /* <-- changed from blue to black */
+    cursor: pointer;
+    font-size: 28px;
+    position: absolute;  /* <-- to position it at the right */
+    top: 28px;
+    right: 20px;
+    z-index: 2100;
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+/* Mobile: Fullscreen Overlay */
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.95);
+    overflow-y: hidden;
+    transition: height 0.5s ease;
+}
+
+.overlay.open {
+    height: 100%;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+}
+
+.overlay-content a {
+    display: block;
+    margin: 20px 0;
+    font-size: 36px;
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.overlay-content a:hover {
+    color: #f1f1f1;
+}
+
+.closebtn {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 60px;
+    color: #f1f1f1;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hero-image-container {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Faded overlay from dark to white */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.95));
+    z-index: 1;
+}
+
+/* Hero text and button */
+.hero-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    color: white;
+    width: 90%;
+    max-width: 700px;
+    padding: 0 10px;
+}
+
+
+
+.hero-text h1 {
+    font-size: clamp(24px, 5vw, 48px);
+    margin-bottom: 10px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.7);
+}
+
+.hero-text p {
+    font-size: clamp(14px, 2.5vw, 20px);
+    margin-bottom: 20px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+}
+
+/* Animation */
+@keyframes bounceClick {
+  0%   { transform: scale(1); }
+  30%  { transform: scale(1.1); }
+  50%  { transform: scale(0.95); }
+  70%  { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.hero-button.clicked {
+  animation: bounceClick 0.6s ease-in-out;
+}
+
+
+
+
+.hero-button {
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    background-color: whitesmoke;
+    color: darkorange;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #ffda44;
+    color: black;
+}
+
+.button-hero-class{
+    gap: 50px;
+}
+
+
+
+
+/* Font size for small height devices */
+@media screen and (max-height: 450px) {
+    .overlay-content a {
+        font-size: 20px;
+    }
+
+    .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+/* Media Query - Tablets */
+@media (max-width: 1024px) {
+    .content-container {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    .desktop-nav a {
+        font-size: 16px;
+    }
+}
+
+/* Media Query - Mobile */
+@media (max-width: 768px) {
+    .content-container {
+        padding: 10px;
+        max-width: 95%;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-only {
+        display: inline-block;
+    }
+
+    .hero-text {
+        top: 30%;
+        left: 1%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+    }
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+
+  .hero-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .button-hero-class {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+}
+
+/* Hide toggle button on large screens */
+@media (min-width: 769px) {
+    .mobile-only {
+        display: none;
+    }
+
+    .button-hero-class {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+
