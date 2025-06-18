@@ -10,7 +10,7 @@
     position: relative;
 }
 
-.nav-bottom{
+.nav-bottom {
     background-color: rgb(231, 159, 5);
     height: 5px;
 }
@@ -22,7 +22,25 @@
     gap: 30px;
     padding: 15px 0;
     background-color: #333;
+    width: 100%;
+    transition: all 0.3s ease;
 }
+
+.menu-button.sticky {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1100;
+}
+
+
+.desktop-nav.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
 
 .desktop-nav a {
     color: white;
@@ -38,19 +56,18 @@
 .menu-button {
     background: none;
     border: none;
-    color: black; /* <-- changed from blue to black */
+    color: black;
     cursor: pointer;
     font-size: 28px;
-    position: absolute;  /* <-- to position it at the right */
-    top: 28px;
+    position: fixed;
+    top: 18px;
     right: 20px;
-    z-index: 2100;
+    z-index: 1100;
 }
 
 .hidden {
     display: none !important;
 }
-
 
 /* Mobile: Fullscreen Overlay */
 .overlay {
@@ -106,7 +123,7 @@
     height: 90vh;
     overflow: hidden;
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 1px; /* To offset fixed nav height */
 }
 
 .hero-image {
@@ -123,7 +140,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.95));
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0.45));
     z-index: 1;
 }
 
@@ -137,11 +154,9 @@
     z-index: 2;
     color: white;
     width: 90%;
-    max-width: 700px;
+    max-width: 600px;
     padding: 0 10px;
 }
-
-
 
 .hero-text h1 {
     font-size: clamp(24px, 5vw, 48px);
@@ -168,9 +183,6 @@
   animation: bounceClick 0.6s ease-in-out;
 }
 
-
-
-
 .hero-button {
     padding: 12px 24px;
     font-size: 16px;
@@ -187,12 +199,9 @@
     color: black;
 }
 
-.button-hero-class{
+.button-hero-class {
     gap: 50px;
 }
-
-
-
 
 /* Font size for small height devices */
 @media screen and (max-height: 450px) {
@@ -242,26 +251,25 @@
         text-align: center;
     }
 
-  .hero-text h1 {
-    font-size: 28px;
-  }
+    .hero-text h1 {
+        font-size: 28px;
+    }
 
-  .hero-text p {
-    font-size: 16px;
-  }
+    .hero-text p {
+        font-size: 16px;
+    }
 
-  .hero-button {
-    padding: 8px 16px;
-    font-size: 14px;
-  }
+    .hero-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
 
-  .button-hero-class {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-  
+    .button-hero-class {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
 }
 
 /* Hide toggle button on large screens */
@@ -277,5 +285,3 @@
         gap: 20px;
     }
 }
-
-

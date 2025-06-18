@@ -4,13 +4,36 @@ import { useEffect, useState } from 'react';
 import maldivesImage from './background-maldives.jpg';
 import ExploreSection from './ExploreSection';
 import './MaldivesWebsite.css';
+import WeatherHeader from './WeatherHeader';
 
 const MaldivesWebsite = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  useEffect(() => {
-    AOS.init({ duration: 2000, once: false });
-  }, []);
+ useEffect(() => {
+  // Initialize AOS
+  AOS.init({ duration: 2000, once: false });
+
+  // Scroll handler to toggle sticky class
+  const handleScroll = () => {
+    const nav = document.querySelector('.desktop-nav');
+    const menuBtn = document.querySelector('.menu-button');
+
+    if (window.scrollY > 50) {
+      nav?.classList.add('sticky');
+      menuBtn?.classList.add('sticky');
+    } else {
+      nav?.classList.remove('sticky');
+      menuBtn?.classList.remove('sticky');
+    }
+  };
+
+  // Add scroll listener
+  window.addEventListener('scroll', handleScroll);
+
+  // Cleanup on unmount
+  return () => window.removeEventListener('scroll', handleScroll);
+}, []);
+
 
   const openNav = () => setMenuOpen(true);
   const closeNav = () => setMenuOpen(false);
@@ -32,14 +55,15 @@ const MaldivesWebsite = () => {
   return (
       <div className="Hero-container">
         <div className="content-container">
-          <h1>Welcome to Maldives</h1>
+          <WeatherHeader /> 
+
 
           {/* Desktop Navigation */}
           <div className="nav-links desktop-nav">
             <a href="#home">Home</a>
-            <a href="#explore">Explore</a>
+            <a href="#explore" onClick={handleExploreClick}>Explore</a>
             <a href="#activities">Activities</a>
-            <a href="#register">Register</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScj8tHwwwiYqDAuxXg9qJyRdC6R8_iN2LQXJj4qf2XX6_VkyQ/viewform?usp=header">Register</a>
             <a href="#contact">Contact</a>
           </div>
 
@@ -60,9 +84,10 @@ const MaldivesWebsite = () => {
             </button>
             <div className="overlay-content">
               <a href="#home" onClick={closeNav}>Home</a>
-              <a href="#explore" onClick={closeNav}>Explore</a>
+              <a href="#explore" onClick={() => { closeNav(); handleExploreClick(); }}>Explore</a>
               <a href="#activities" onClick={closeNav}>Activities</a>
-              <a href="#register" onClick={closeNav}>Register</a>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLScj8tHwwwiYqDAuxXg9qJyRdC6R8_iN2LQXJj4qf2XX6_VkyQ/viewform?usp=header" onClick={closeNav} target="_blank"
+                  rel="noopener noreferrer">Register</a>
               <a href="#contact" onClick={closeNav}>Contact</a>
             </div>
           </div>

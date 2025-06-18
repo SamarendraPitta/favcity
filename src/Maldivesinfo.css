@@ -1,0 +1,44 @@
+.maldives-info-section {
+  padding: 60px 20px;
+  background: #f8f9fa;
+  color: #333;
+  text-align: center;
+}
+
+.info-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.maldives-info-section h2 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+  color: #0077b6;
+}
+
+.maldives-info-section h3 {
+  margin-top: 30px;
+  color: #023e8a;
+  font-size: 1.6rem;
+}
+
+.intro {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.highlight-list,
+.fun-facts {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.highlight-list li,
+.fun-facts li {
+  margin: 10px 0;
+  font-size: 1rem;
+  padding-left: 1em;
+  text-align: left;
+}

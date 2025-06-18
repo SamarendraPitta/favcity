@@ -1,0 +1,66 @@
+.weather-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(236, 237, 238);
+  border-bottom: 1px solid #ddd;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 10px 20px;
+  height: 60px;
+}
+
+/* Logo area */
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: auto;
+  width: 120px;
+  object-fit: contain;
+}
+
+/* Temperature and icon */
+.time-weather {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.weather-icon {
+  font-size: 24px;
+}
+
+.temp {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Responsive logo sizing */
+@media (max-width: 1024px) {
+  .logo-img {
+    width: 100px;
+  }
+}
+
+@media (min-width: 768px){
+    .weather-header {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+  .logo-img {
+    width: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-img {
+    width: 60px;
+  }
+}
