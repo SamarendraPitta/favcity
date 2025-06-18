@@ -1,21 +1,29 @@
 {
   "files": {
-    "main.css": "/favcity/static/css/main.a228c4ed.css",
-    "main.js": "/favcity/static/js/main.d27afd4f.js",
+    "main.css": "/favcity/static/css/main.8c4bfe93.css",
+    "main.js": "/favcity/static/js/main.07fbb1c9.js",
     "static/js/453.25a5f567.chunk.js": "/favcity/static/js/453.25a5f567.chunk.js",
+    "static/media/maldives.mp4": "/favcity/static/media/maldives.1ba7e157346df5fe8ea4.mp4",
     "static/media/snoring.jpg": "/favcity/static/media/snoring.47b11919acc4e76f00f4.jpg",
     "static/media/background-maldives.jpg": "/favcity/static/media/background-maldives.9211838da76b3431b8fa.jpg",
+    "static/media/sandbank.jpg": "/favcity/static/media/sandbank.51174646181afc841005.jpg",
     "static/media/maldiveslogo.svg": "/favcity/static/media/maldiveslogo.71adc8284611fc4fa3fb82b1afdd81a0.svg",
     "static/media/watervillas.jpg": "/favcity/static/media/watervillas.707fe3f55e69c41f4c94.jpg",
+    "static/media/privateisland.jpg": "/favcity/static/media/privateisland.3bba97b613aed7e84b24.jpg",
+    "static/media/underwater.jpg": "/favcity/static/media/underwater.ad5f2116b24a449c2b9d.jpg",
+    "static/media/beachsidedining.jpg": "/favcity/static/media/beachsidedining.330da0fa31df396618b6.jpg",
     "static/media/bioluminent.jpg": "/favcity/static/media/bioluminent.7e31cf4d55db1d54c67b.jpg",
-    "static/media/sunsetcruise.webp": "/favcity/static/media/sunsetcruise.147e918b7faed1bdaac9.webp",
+    "static/media/onlyblue.webp": "/favcity/static/media/onlyblue.51f459b0e142108ec1a8.webp",
+    "static/media/sunsetcruise.jpg": "/favcity/static/media/sunsetcruise.d5ee11e69dbbe5b53f34.jpg",
+    "static/media/dolphinwatching.jpg": "/favcity/static/media/dolphinwatching.b52e6d41e927cbace573.jpg",
+    "static/media/island-bazar.webp": "/favcity/static/media/island-bazar.c52efa76f6172fbdd3c6.webp",
     "index.html": "/favcity/index.html",
-    "main.a228c4ed.css.map": "/favcity/static/css/main.a228c4ed.css.map",
-    "main.d27afd4f.js.map": "/favcity/static/js/main.d27afd4f.js.map",
+    "main.8c4bfe93.css.map": "/favcity/static/css/main.8c4bfe93.css.map",
+    "main.07fbb1c9.js.map": "/favcity/static/js/main.07fbb1c9.js.map",
     "453.25a5f567.chunk.js.map": "/favcity/static/js/453.25a5f567.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a228c4ed.css",
-    "static/js/main.d27afd4f.js"
+    "static/css/main.8c4bfe93.css",
+    "static/js/main.07fbb1c9.js"
   ]
 }
