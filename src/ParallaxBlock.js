@@ -1,17 +1,19 @@
+import 'aos/dist/aos.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
-
 import './ParallaxBlock.css';
 
 // Local images from your src folder
 import glowingImg from './bioluminent.jpg';
+import privateIslandImg from './privateisland.jpg';
+import sandbankImg from './sandbank.jpg';
 import snorkelingImg from './snoring.jpg';
-import { default as privateIslandImg, default as sunsetCruiseImg } from './sunsetcruise.webp'; // using same as placeholder
+import sunsetCruiseImg from './sunsetcruise.jpg'; // using same as placeholder
 import overwaterImg from './watervillas.jpg';
 
 function MaldivesCarousel() {
   return (
-    <div className="carousel-container">
+    <div className="carousel-container" data-aos="zoom-out" data-aos-duration="3000">
       <Carousel fade interval={3500}>
         <Carousel.Item>
           <img className="d-block w-100" src={snorkelingImg} alt="Snorkeling & Diving" />
@@ -52,7 +54,27 @@ function MaldivesCarousel() {
             <p>Drift into a glowing horizon aboard a traditional Maldivian Dhoni boat.</p>
           </Carousel.Caption>
         </Carousel.Item>
+
+        <Carousel.Item>
+            <img className="d-block w-100" src={sandbankImg} alt="Sandbank Experience" />
+            <Carousel.Caption>
+                <h3>Sandbank Experience</h3>
+                <p>Dine in solitude on a tiny island surrounded by the Indian Ocean — where serenity meets luxury.</p>
+            </Carousel.Caption>
+        </Carousel.Item>
+
+
+        <Carousel.Item>
+            <img className="d-block w-100" src={require('./dolphinwatching.jpg')} alt="Dolphin Watching" />
+            <Carousel.Caption>
+                <h3>Dolphin Watching</h3>
+                <p>Watch playful dolphins leap through the ocean beside your boat at sunset.</p>
+            </Carousel.Caption>
+        </Carousel.Item>
+
+
       </Carousel>
+
     </div>
   );
 }

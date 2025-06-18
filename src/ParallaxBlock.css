@@ -23,3 +23,19 @@
   color: #fff;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 }
+
+@media (max-width: 768px) {
+  .carousel-caption h3 {
+    font-size: 18px;
+  }
+
+  .carousel-caption p {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .carousel-caption {
+    padding: 10px;
+  }
+}
+

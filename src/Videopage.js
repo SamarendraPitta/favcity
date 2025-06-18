@@ -1,17 +1,18 @@
 import './Videopage.css';
-
+import sampleVideo from './maldives.mp4';
 const VideoPage = () => {
   return (
     <div className="video-container">
-      <iframe
+      <video
+        src={sampleVideo}
         width="100%"
         height="400"
-        src="https://www.youtube.com/embed/20xyj1DnM7c"
-        title="Maldives Scenic Video"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      ></iframe>
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="looped-video"
+      />
     </div>
   );
 };

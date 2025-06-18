@@ -3,6 +3,7 @@ import 'aos/dist/aos.css';
 import { useEffect, useState } from 'react';
 import maldivesImage from './background-maldives.jpg';
 import ExploreSection from './ExploreSection';
+import Footer from './Footer';
 import './MaldivesWebsite.css';
 import WeatherHeader from './WeatherHeader';
 
@@ -115,6 +116,7 @@ const MaldivesWebsite = () => {
           </div>
 
           <ExploreSection />
+          <Footer />
 
         </div>
       </div>
