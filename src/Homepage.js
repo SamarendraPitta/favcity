@@ -63,8 +63,9 @@ const MaldivesWebsite = () => {
           <div className="nav-links desktop-nav">
             <a href="#home">Home</a>
             <a href="#explore" onClick={handleExploreClick}>Explore</a>
-            <a href="#activities">Activities</a>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScj8tHwwwiYqDAuxXg9qJyRdC6R8_iN2LQXJj4qf2XX6_VkyQ/viewform?usp=header">Register</a>
+            <a href="#activities">Blog</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScj8tHwwwiYqDAuxXg9qJyRdC6R8_iN2LQXJj4qf2XX6_VkyQ/viewform?usp=header" target="_blank"
+                  rel="noopener noreferrer">Register</a>
             <a href="#contact">Contact</a>
           </div>
 
@@ -86,7 +87,7 @@ const MaldivesWebsite = () => {
             <div className="overlay-content">
               <a href="#home" onClick={closeNav}>Home</a>
               <a href="#explore" onClick={() => { closeNav(); handleExploreClick(); }}>Explore</a>
-              <a href="#activities" onClick={closeNav}>Activities</a>
+              <a href="#activities" onClick={closeNav}>Blog</a>
               <a href="https://docs.google.com/forms/d/e/1FAIpQLScj8tHwwwiYqDAuxXg9qJyRdC6R8_iN2LQXJj4qf2XX6_VkyQ/viewform?usp=header" onClick={closeNav} target="_blank"
                   rel="noopener noreferrer">Register</a>
               <a href="#contact" onClick={closeNav}>Contact</a>
