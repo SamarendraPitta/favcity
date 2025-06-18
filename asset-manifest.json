@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/favcity/static/css/main.0431eaa2.css",
-    "main.js": "/favcity/static/js/main.1fcbae03.js",
+    "main.css": "/favcity/static/css/main.a228c4ed.css",
+    "main.js": "/favcity/static/js/main.d27afd4f.js",
     "static/js/453.25a5f567.chunk.js": "/favcity/static/js/453.25a5f567.chunk.js",
     "static/media/snoring.jpg": "/favcity/static/media/snoring.47b11919acc4e76f00f4.jpg",
     "static/media/background-maldives.jpg": "/favcity/static/media/background-maldives.9211838da76b3431b8fa.jpg",
+    "static/media/maldiveslogo.svg": "/favcity/static/media/maldiveslogo.71adc8284611fc4fa3fb82b1afdd81a0.svg",
     "static/media/watervillas.jpg": "/favcity/static/media/watervillas.707fe3f55e69c41f4c94.jpg",
     "static/media/bioluminent.jpg": "/favcity/static/media/bioluminent.7e31cf4d55db1d54c67b.jpg",
     "static/media/sunsetcruise.webp": "/favcity/static/media/sunsetcruise.147e918b7faed1bdaac9.webp",
     "index.html": "/favcity/index.html",
-    "main.0431eaa2.css.map": "/favcity/static/css/main.0431eaa2.css.map",
-    "main.1fcbae03.js.map": "/favcity/static/js/main.1fcbae03.js.map",
+    "main.a228c4ed.css.map": "/favcity/static/css/main.a228c4ed.css.map",
+    "main.d27afd4f.js.map": "/favcity/static/js/main.d27afd4f.js.map",
     "453.25a5f567.chunk.js.map": "/favcity/static/js/453.25a5f567.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0431eaa2.css",
-    "static/js/main.1fcbae03.js"
+    "static/css/main.a228c4ed.css",
+    "static/js/main.d27afd4f.js"
   ]
 }
